@@ -64,6 +64,9 @@ a{
   display: flex;
   gap: 2rem;
 }
+.home{
+  
+}
 .hero {
   position: absolute;
   width: 100%;
@@ -134,7 +137,7 @@ background: linear-gradient(to top, #000000, #060606, transparent);
   transform: scale(1.05);
 }
 .about{
-  position: absolute;
+  position: relative;
   background-color: var(--primary-300);
 }
 .section-title{
@@ -190,4 +193,8 @@ background: linear-gradient(to top, #000000, #060606, transparent);
 .skill.visible{
   transform: translate(0,0);
   opacity: 1;
+}
+.projects{
+  position: relative;
+  background-color: var(--primary-400);
 }
