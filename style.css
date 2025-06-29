@@ -177,7 +177,17 @@ background: linear-gradient(to top, #000000, #060606, transparent);
   border-radius: 20px;
   color: white;
   font-weight: 500;
+  opacity: 0;
+  transition: all 2s ease-out;
 }
-.skills ul li:nth-child(1):hover{
-  
+
+.move-x{
+  transform: translateX(-100px);
+}
+.move-y{
+  transform: translateY(-100px);
+}
+.skill.visible{
+  transform: translate(0,0);
+  opacity: 1;
 }
