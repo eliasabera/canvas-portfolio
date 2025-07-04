@@ -206,6 +206,34 @@ background: linear-gradient(to top, #000000, #060606, transparent);
   background-color: var(--primary-400);
   color: #fff;
 }
+.projects h2{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+.pro-div{
+  width: 25rem;
+  height: 35rem;
+  border: solid #fff;
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: box-anime 1s forwards;
+  animation-timeline: view();
+}
+
+.pro-cont{
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+@keyframes box-anime {
+  100%{
+    scale: 1;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @keyframes movex {
   0%{
     transform: translateX(-100px);
@@ -238,7 +266,6 @@ background: linear-gradient(to top, #000000, #060606, transparent);
     scale: 1;
   }
 }
-.projects h2{
-  color: red;
-  clip-path: ellipse();
-}
+
+
+
