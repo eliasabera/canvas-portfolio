@@ -1,4 +1,4 @@
-//const skills = document.querySelector(".skills");
+// const skills = document.querySelector(".skills");
 // const skill = document.querySelectorAll(".skill");
 // function callbackFuction(entry) {
 //   entry.forEach((e) => {
