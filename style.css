@@ -13,6 +13,8 @@
   --primary-400: rgb(24, 18, 43);
   --clr-primary-4: hsl(205, 63%, 48%);
   --clr-white: #fff;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #canvas {
@@ -208,6 +210,7 @@ footer {
   width: 30rem;
   height: 20rem;
   border: solid #fff;
+  box-shadow: var(--light-shadow);
   /* opacity: 0;
   transform: translateY(-100px);
   animation: box-anime 1s forwards;
@@ -278,6 +281,9 @@ footer {
 .box-btn button{
   width: 100px;
   border-radius: 50px;
+  background-color: var(--primary-100);
+  color: var(--clr-white);
+  border: 2px solid var(--primary-100);
 }
 
 /* @keyframes box-anime {
@@ -318,4 +324,7 @@ footer {
     translate: 0 0;
     scale: 1;
   }
+}
+@view-transition{
+  
 }
