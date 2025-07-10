@@ -133,6 +133,11 @@ footer {
   color: white;
   transform: scale(1.05);
 }
+.custom-btn-filled:hover a {
+  background-color: var(--primary-200);
+  color: white;
+  transform: scale(1.05);
+}
 .about {
   position: relative;
   background-color: var(--primary-300);
@@ -221,11 +226,9 @@ footer {
   text-align: center;
   text-transform: capitalize;
   font-size: 3rem;
-  transform: translateY(100px);
-  scale: 0.2;
-  opacity: 0;
-  animation: titleanime both;
-  animation-timeline: view(50% 5%);
+}
+.custom-btn-filled a{
+  color: var(--primary-200);
 }
 /* @keyframes box-anime {
   100%{
@@ -272,5 +275,118 @@ footer {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .hero-img img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+  }
   
+  .hero-text {
+    margin-bottom: 2rem;
+  }
+  
+  .about-wrapper {
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .about-img img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+  }
+  
+  .scroll-link {
+    font-size: 1.5rem;
+  }
+  
+  .links {
+    gap: 1rem;
+  }
+  
+  .about-img img {
+    width: 300px;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .hero-img img {
+    width: 280px;
+  }
+  
+  .scroll-link {
+    font-size: 1.2rem;
+    padding: 0 5px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .about-img img {
+    width: 250px;
+  }
+  
+  #image-track > a > .image {
+    width: 35vmin;
+    height: 50vmin;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .hero-img img {
+    width: 240px;
+  }
+  
+  .scroll-link {
+    font-size: 1rem;
+  }
+  
+  .about-img img {
+    width: 220px;
+  }
+  
+  .skills li {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
 }
