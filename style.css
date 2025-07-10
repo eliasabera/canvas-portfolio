@@ -13,8 +13,7 @@
   --primary-400: rgb(24, 18, 43);
   --clr-primary-4: hsl(205, 63%, 48%);
   --clr-white: #fff;
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
 }
 
 #canvas {
