@@ -206,6 +206,7 @@ footer {
   height: 56vmin;
   object-fit: cover;
   object-position: center 50%;
+  border-radius: 0.5rem;
 }
 #image-track{
   display: flex;
@@ -216,12 +217,16 @@ footer {
   transform: translate(0,-50%);
 }
 .projects h2{
-  width: 100%;
+  margin-top: 1rem;
   text-align: center;
   text-transform: capitalize;
   font-size: 3rem;
+  transform: translateY(100px);
+  scale: 0.2;
+  opacity: 0;
+  animation: titleanime both;
+  animation-timeline: view(50% 5%);
 }
-
 /* @keyframes box-anime {
   100%{
     scale: 1;
@@ -261,6 +266,11 @@ footer {
     scale: 1;
   }
 }
-@view-transition{
+@keyframes titleanime {
+  to{
+    scale: 1;
+    opacity: 1;
+    transform: translateY(0px);
+  }
   
 }
